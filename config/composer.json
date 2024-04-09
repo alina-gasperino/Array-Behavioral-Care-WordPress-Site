@@ -1,0 +1,21 @@
+{
+    "name": "arraybc/arraybc-wp-config",
+    "description": "Array Behavioral Care WP config",
+    "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "symfony/dotenv": "^5.0",
+        "sentry/sdk": "^3.1"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true,
+        "platform": {
+            "php": "7.4.3"
+        }
+    }
+}

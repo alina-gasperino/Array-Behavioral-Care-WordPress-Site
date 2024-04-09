@@ -1,0 +1,4 @@
+Sitemap: https://arraybc.com/sitemap.xml
+User-agent: *
+
+

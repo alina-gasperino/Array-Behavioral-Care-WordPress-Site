@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# variables for manipulating ansi text rendering in ansi-color terminals
+# C_ = "color"
+# T_ = "typeface"
+
+C_BLUE=$(echo -en '\033[00;34m');
+C_LBLUE=$(echo -en '\033[01;34m');
+C_CYAN=$(echo -en '\033[00;36m');
+C_LCYAN=$(echo -en '\033[01;36m');
+C_GREEN=$(echo -en '\033[00;32m');
+C_LGREEN=$(echo -en '\033[01;32m');
+C_MAGENTA=$(echo -en '\033[00;35m');
+C_LMAGENTA=$(echo -en '\033[01;35m');
+C_LPURPLE=$C_LMAGENTA;
+C_RED=$(echo -en '\033[00;31m');
+C_LRED=$(echo -en '\033[01;31m');
+C_WHITE=$(echo -en '\033[01;37m');
+C_LGRAY=$(echo -en '\033[00;37m');
+C_YELLOW=$(echo -en '\033[00;33m');
+C_LYELLOW=$(echo -en '\033[01;33m');
+S_WARN=$(echo -en '\033[48;5;1m');  # yellow bg, red font
+T_BOLD=$(echo -en '\033[1m');     # bold font weight
+T_NORM=$(echo -en '\033[0m');     # normal font weight

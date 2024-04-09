@@ -1,0 +1,42 @@
+[
+    {
+        "type": "File",
+        "name": "/Volumes/www/arraybc/wp-includes/plugin.php",
+        "parent_id": null,
+        "workspaceRoot": "/Volumes/www/arraybc",
+        "workspacePath": "wp-includes/plugin.php",
+        "id": "GZxqFpjSWR2159zM"
+    },
+    {
+        "type": "File",
+        "name": "/Volumes/www/arraybc/wp-includes/class-wp-post.php",
+        "parent_id": null,
+        "workspaceRoot": "/Volumes/www/arraybc",
+        "workspacePath": "wp-includes/class-wp-post.php",
+        "id": "EM2LHnrwAcyP8ZbX"
+    },
+    {
+        "type": "File",
+        "name": "/Volumes/www/arraybc/wp-includes/rest-api/class-wp-rest-server.php",
+        "parent_id": null,
+        "workspaceRoot": "/Volumes/www/arraybc",
+        "workspacePath": "wp-includes/rest-api/class-wp-rest-server.php",
+        "id": "9DQgvwUyA5HjbRJF"
+    },
+    {
+        "type": "File",
+        "name": "/Volumes/www/arraybc/wp-content/plugins/athena-api-tool/athena-api-tool.php",
+        "parent_id": null,
+        "workspaceRoot": "/Volumes/www/arraybc",
+        "workspacePath": "wp-content/plugins/athena-api-tool/athena-api-tool.php",
+        "id": "Pn2p1JYjWF8XEQNI"
+    },
+    {
+        "type": "Directory",
+        "name": "/Volumes/www/arraybc/wp-content/plugins/athena-api-tool",
+        "parent_id": null,
+        "workspaceRoot": "/Volumes/www/arraybc",
+        "workspacePath": "wp-content/plugins/athena-api-tool",
+        "id": "VAfr9Ko7jZBNJwyI"
+    }
+]

@@ -1,0 +1,33 @@
+image: composer:2.0
+
+definitions:
+  steps:
+    - step: &ci-build
+        name: Build + Deploy
+        script:
+          - echo "$DOTENV" | base64 --decode > "config/.env" && cat "config/.env"
+          - composer --working-dir=config --no-interaction install
+          - _src/bin/ci-file-perms.sh
+          - pipe: atlassian/rsync-deploy:0.6.0
+            variables:
+              USER: $DEPLOY_USER
+              SERVER: $DEPLOY_HOST
+              LOCAL_PATH: "./"
+              REMOTE_PATH: $DEPLOY_PATH
+              EXTRA_ARGS: -azv --exclude-from=_src/rsync-excludes.$BITBUCKET_DEPLOYMENT_ENVIRONMENT
+              DELETE_FLAG: "false"
+pipelines:
+  branches:
+    stage:
+      - step:
+          <<: *ci-build
+          deployment: dev
+    production:
+      - step:
+          name: Preflight
+          script:
+            - _src/bin/ci-preflight.sh
+      - step:
+          <<: *ci-build
+          deployment: prod
+          trigger: manual

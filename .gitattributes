@@ -1,0 +1,79 @@
+* text eol=lf
+*.css linguist-vendored
+*.scss linguist-vendored
+*.js linguist-vendored
+CHANGELOG.md export-ignore
+
+# Explicitly declare text files we want to always be normalized and converted
+# to native line endings on checkout.
+*.css text
+*.ctp text
+*.default text
+*.ini text
+*.js text
+*.md text
+*.php text
+*.po text
+*.properties text
+*.sql text
+*.twig text
+*.txt text
+*.xml text
+*.yml text
+.htaccess text
+
+# Declare files that will always have CRLF line endings on checkout.
+*.bat eol=crlf
+*.hwg+ eol=crlf
+
+# Declare files that will always have LF line endings on checkout.
+*.pem eol=lf
+
+# Denote all files that are truly binary and should not be modified.
+*.avi binary
+*.bsfw binary
+*.bundle.js binary
+*.crt binary
+*.data binary
+*.doc binary
+*.docx binary
+*.eot binary
+*.exe binary
+*.gif binary
+*.graffle binary
+*.gz binary
+*.icc binary
+*.ico binary
+*.jpeg binary
+*.jpg binary
+*.JPG binary
+*.key binary
+*.m4v binary
+*.map binary
+*.min.* binary
+*.mo binary
+*.mov binary
+*.mp4 binary
+*.ogg binary
+*.ogv binary
+*.otf binary
+*.pdf binary
+*.phar binary
+*.png binary
+*.pot binary
+*.ppt binary
+*.pptx binary
+*.psd binary
+*.svg binary
+*.swf binary
+*.tar binary
+*.tif binary
+*.tiff binary
+*.ttf binary
+*.webm binary
+*.wmv binary
+*.woff binary
+*.woff2 binary
+*.xls binary
+*.xlsx binary
+*.zip binary
